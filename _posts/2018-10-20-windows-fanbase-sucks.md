@@ -29,7 +29,7 @@ wiedzy na temat tychże systemów powinni się na ich temat wypowiadać? Moim zd
 ## Zalety i wady Windowsa:
 Zalety:
   * Dostępność oprogramowania *(To co mnie trzyma zdala od GNU/Linuxa)*
-  * Smaczki których nie ma żadne GNU/Linuxowe DE typu: historia schowka, timeline, dopracowany screenshooter, Windows Hello \
+  * Smaczki których nie ma żadne GNU/Linuxowe DE typu: historia schowka, timeline, dopracowany screenshooter, Windows Hello
 
 Wady:
   * System plików, dzięki któremu nasz system aktualizuje się czasem nawet kilka godzin, i potrzebuje przy tym reboota.
@@ -53,7 +53,7 @@ Zalety:
   * Stabilność i [wydajność](https://www.phoronix.com/scan.php?page=article&item=2990wx-linux-windows&num=1). GNU/Linux nie wypierdala się co update 
     *(Chyba że masz kartę novideo, to wtedy tak XD)*, ani nie zwalnia znacząco po jednym dniu uptime' u.
   * Updaty bez rebootów trwających 2137h \
-  
+
 Wady:
   * Mniejsza dostępność oprogramowania *(To właśnie mnie trzyma z dala od tego systemu)*
   * Częste zaniedbanie użytkowników tego systemu przez producentów sprzętu. O dobry przykład nie trzeba iść daleko,
