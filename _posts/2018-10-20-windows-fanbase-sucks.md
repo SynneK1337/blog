@@ -8,7 +8,7 @@ tags:
   - Windows
   - FOSS
 hero: uploads/linusnvidia.png
-overlay: green
+overlay: blue
 published: true
 
 ---
