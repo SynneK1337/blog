@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tensorflow instalation guide for Fedora GNU/Linux"
+title:  "Tensorflow installation guide for Fedora GNU/Linux"
 tags:
   - Fedora
   - Linux
