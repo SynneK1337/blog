@@ -1,3 +1,21 @@
+---
+layout: post
+title:  "Tensorflow instalation guide for Fedora GNU/Linux"
+tags:
+  - Fedora
+  - Linux
+  - GNU/Linux
+  - Tensorflow
+  - AI
+  - Machine Learning
+  - Artifical Inteligence
+  - Google Code-In
+hero: uploads/tensorflowfedora.png
+overlay: blue
+published: true
+
+---
+<!–-break-–>
 ## How to install Tensorflow on [Fedora GNU/Linux](https://getfedora.org/)
 ## Tensorflow instalation using [Docker](https://www.docker.com/)
  *If you don' t have docker installed, you can do this simply by ```sudo dnf install docker```*
