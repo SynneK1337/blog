@@ -44,23 +44,9 @@ published: true
     * ```sudo cp cuda/include/cudnn.h /usr/local/cuda/include```
       ```sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64```
       ```sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*```
-      
+
 ## Test the installation
 * Create test.py
-  ```
-      import tensorflow as tf
 
-
-      class SquareTest(tf.test.TestCase):
-
-        def testSquare(self):
-          with self.test_session():
-            x = tf.square([2, 3])
-            self.assertAllEqual(x.eval(), [4, 9])
-
-
-      if __name__ == '__main__':
-        tf.test.main()
-  ```
 
 * ```python3.6 test.py```
