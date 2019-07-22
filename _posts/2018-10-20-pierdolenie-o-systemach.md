@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dlaczego fanbase Windowsa jest zły oraz krótkie porównanie dwóch systemów."
+title:  "Jakieśtam pierdolenie o Windowsie i GNU/Linuxie"
 tags:
   - GNU
   - GNU/Linux
