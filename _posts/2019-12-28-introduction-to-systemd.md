@@ -15,7 +15,7 @@ overlay: red
 published: true
 
 ---
-<!–-break-–>
+<!--break-->
 
 ### Creating a service, force it to start automatically and reload it if crashed.
 
@@ -30,7 +30,7 @@ pynotes-server can be run with ```python3 /usr/bin/pynotes-server/main.py```.
 
 ## How can I create systemd service file?
 Systemd stores service unit files in ```/etc/systemd/system/``` directory.
-### Let' s create file named `pynotes.service` inside `/etc/systemd/system` directory:
+## Let' s create file named `pynotes.service` inside `/etc/systemd/system` directory:
 ```
 [Unit]
 Description=Simple notes hosting solution
@@ -45,18 +45,18 @@ ExecStart=/bin/python3 /usr/bin/pynotes-server/main.py  ; Command used to execut
 WantedBy=multi-user.target
 ```
 
-### Now, you can start your service:
+## Now, you can start your service:
 ```
 systemctl start pynotes
 ```
 
-### And if you want it to start automatically after boot up:
+## And if you want it to start automatically after boot up:
 ```
 systemctl enable pynotes
 ```
 
 ## Improving this service
-### You might noticed, that pynotes depend on [mysql](https://www.mysql.com/). In this case, we want our service to start after `mysqld.service`
+## You might noticed, that pynotes depend on [mysql](https://www.mysql.com/). In this case, we want our service to start after `mysqld.service`
 Let' s change this in our file:
 ```
 ...
@@ -65,10 +65,10 @@ After=mysqld.service
 ```
 Yay, now there won' t be a situation where our scripts are being executed while mysql is not running.
 
-### But what if our service fails? Will systemd run it again?
+## But what if our service fails? Will systemd run it again?
 By default - **not**. But we can change configuration of our service to force systemd to reload it after failure.
 
-#### Within `[Service]` section:
+## Within `[Service]` section:
 If you want to always reload your service, even if it exits with success:
 ```
 restart=always
@@ -84,7 +84,7 @@ RestartSec=1
 ```
 With this line, systemd will reload the service after 1 second, instead of 100ms.
 
-### By default, after 5 failed restart attempts within 10 seconds systemd stops trying to restart the service forever.
+## By default, after 5 failed restart attempts within 10 seconds systemd stops trying to restart the service forever.
 You can simply change that, by adding `StartLimitIntervalSec=0` within `[Unit]` section.
 
 ## Final `pynotes.service` file:
@@ -111,4 +111,4 @@ Systemd is default init in almost every **GNU/Linux** distribution nowadays. The
 - [Gentoo](https://gentoo.org/) - it can use systemd or openrc
 - [Devuan](https://devuan.org/)
 
-#### Made by Emilian `synnek1337` Zawrotny for Google Code-In 2019.
+## Made by Emilian `synnek1337` Zawrotny for Google Code-In 2019.
