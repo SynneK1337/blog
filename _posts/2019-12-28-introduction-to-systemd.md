@@ -1,4 +1,22 @@
-# Introduction to systemd
+---
+layout: post
+title:  "Introduction to systemd"
+tags:
+  - systemd
+  - linux
+  - gnulinux
+  - gnu/linux
+  - sysop
+  - devop
+  - sysadmin
+  - redhat
+hero: uploads/systemd.jpg
+overlay: red
+published: true
+
+---
+<!–-break-–>
+
 ### Creating a service, force it to start automatically and reload it if crashed.
 
 Sometimes it is useful to have an app running all the time, auto-restarting if it crashes. The simplest way to achieve that is make systemd service with this app.
